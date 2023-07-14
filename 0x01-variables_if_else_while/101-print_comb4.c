@@ -7,18 +7,23 @@
 
 int main(void)
 {
-for (int i = 0; i < 10; i++)
+int i = '0';
+int j = '0';
+int k = '0';
+
+for (k = '0'; k <= '9'; k++)
 {
-for (int j = 0; j < 10; j++)
+for (j = '0'; j <= '9'; j++)
 {
-for (int k = 0; k < 10; k++)
+for (i = '0'; i <= '9'; i++)
 {
-if (i < j && j < k)
+if (!((i == j) || (j == k) ||
+(j > i) || (k > j)))
 {
-putchar(i + '0');
-putchar(j + '0');
-putchar(k + '0');
-if (i != 7 || j != 8 || k != 9)
+putchar(k);
+putchar(j);
+putchar(i);
+if (!(i == '9' && k == '7' && j == '8'))
 {
 putchar(',');
 putchar(' ');
@@ -26,7 +31,7 @@ putchar(' ');
 }
 }
 }
-putchar('\n');
 }
+putchar('\n');
 return (0);
 }
