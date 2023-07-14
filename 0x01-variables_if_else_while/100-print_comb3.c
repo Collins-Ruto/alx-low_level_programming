@@ -7,19 +7,22 @@
 
 int main(void)
 {
-int number1 = 0;
-while (number1 < 9)
+int n1 = 0;
+while (n1 < 9)
 {
-int number2 = number1 + 1;
-while (number2 <= 9)
+int n2 = n1 + 1;
+while (n2 <= 9)
 {
-putchar(number1 + '0');
-putchar(number2 + '0');
+putchar(n1 + '0');
+putchar(n2 + '0');
+if (n1 != 8 || n2 != 9)
+{
 putchar(',');
 putchar(' ');
-number2++;
 }
-number1++;
+n2++;
+}
+n1++;
 }
 putchar('\n');
 

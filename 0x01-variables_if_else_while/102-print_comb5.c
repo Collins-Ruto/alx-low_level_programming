@@ -31,6 +31,6 @@ number2++;
 }
 number1++;
 }
-
+putchar('\n');
 return (0);
 }

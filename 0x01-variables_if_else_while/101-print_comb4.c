@@ -7,27 +7,26 @@
 
 int main(void)
 {
-int number1 = 0;
-while (number1 < 9)
+for (int i = 0; i < 10; i++)
 {
-int number2 = number1 + 1;
-while (number2 <= 9)
+for (int j = 0; j < 10; j++)
 {
-int number3 = number2 + 1;
-while (number3 < 9)
+for (int k = 0; k < 10; k++)
 {
-putchar(number1 + '0');
-putchar(number2 + '0');
-putchar(number3 + '0');
+if (i < j && j < k)
+{
+putchar(i + '0');
+putchar(j + '0');
+putchar(k + '0');
+if (i != 7 || j != 8 || k != 9)
+{
 putchar(',');
 putchar(' ');
-number3++;
 }
-number2++;
 }
-number1++;
+}
 }
 putchar('\n');
-
+}
 return (0);
 }
