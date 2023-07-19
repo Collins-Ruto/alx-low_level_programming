@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
 *print_to_98 - incrementaly prints all natural numbers from n to 98
+*@n: starting no parameter
 *return: void
 */
 void print_to_98(int n)
